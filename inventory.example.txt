@@ -1,0 +1,7 @@
+# One vendor or product per line (case-insensitive substring match).
+# Copy this file to inventory.txt and fill in your actual stack.
+Fortinet
+Ivanti
+Cisco
+VMware
+Apache
