@@ -22,6 +22,33 @@ uv tool install .
 
 This installs a global `kev-analyzer` command. To update after pulling new changes, run `uv tool install . --force`.
 
+## SOC Use Cases
+- Prioritize vulnerability patching based on active exploitation
+- Enrich incident investigations with KEV threat intelligence
+- Cross-reference detected exploits during alert triage
+- Feed KEV data into SIEM detection rules
+- Track ransomware-associated vulnerabilities for threat hunting
+
+## Example Output
+
+```sh
+$ kev-analyzer
+
+=== CISA KEV Catalog === Total entries: 1,247 Ransomware-linked: 189 (15.2%) Top vendors: Microsoft, Adobe, Cisco, Fortinet, Apple
+
+Recent additions (last 14 days): 7
+
+CVE-2024-XXXXX (Fortinet) - RCE
+CVE-2024-XXXXX (Microsoft) - Elevation of Privilege ...
+```
+
+## MITRE ATT&CK Relevance
+
+KEV vulnerabilities are frequently mapped to:
+- T1190 (Exploit Public-Facing Application)
+- T1210 (Exploitation of Remote Services)
+- T1068 (Exploitation for Privilege Escalation)
+
 ## Usage
 
 ```sh
